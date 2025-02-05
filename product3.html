@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S'morey Time by Bones Coffee</title>
+    <!-- css link-->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="freeship">
+      <p class="discount-text mobile-hide">
+        Free Shipping On All U.S. Oders $80+
+      </p>
+    </div>
+    <!-- Header Section -->
+    <header id="header">
+      <div class="nav-container">
+        <div class="container">
+          <nav class="navbar">
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <div>
+              <a href="quiz.html" class="main-btn mobile-hide"
+                >FIND YOUR FAVE</a
+              >
+            </div>
+            <div class="desktop-hide mobile-show">
+              <a href="index.html"
+                ><img
+                  class="nav-logo"
+                  src="image/logo.jpg"
+                  alt="Brew & Blossom Logo"
+              /></a>
+            </div>
+            <div>
+              <ul class="nav-menu">
+                <li class="nav-item nav-top">
+                  <a href="shop.html#coffee" class="nav-link">Coffee</a>
+                </li>
+                <li class="nav-item">
+                  <a href="shop.html#tea" class="nav-link">Tea</a>
+                </li>
+                <li class="nav-item mobile-hide">
+                  <a href="index.html" class="nav-link"
+                    ><img
+                      class="nav-logo"
+                      src="image/logo.jpg"
+                      alt="Brew & Blossom Logo"
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="subscribe.html" class="nav-link">Subscribe</a>
+                </li>
+                <li class="nav-item desktop-hide mobile-show">
+                  <a href="login.html" class="main-btn nav-link"
+                    ><div class="flex-row">
+                      <ion-icon name="person-circle-outline"></ion-icon>Account
+                      Login
+                    </div></a
+                  >
+                </li>
+                <li class="nav-item desktop-hide mobile-show">
+                  <a href="test.html" class="main-btn nav-link"
+                    ><div class="flex-row">
+                      <ion-icon name="cafe-outline"></ion-icon>Find Your
+                      Favorite Taste
+                    </div></a
+                  >
+                </li>
+                <li class="freeship freeship-mobile desktop-hide mobile-show">
+                  Free Shipping On All U.S. Oders $80+
+                </li>
+              </ul>
+            </div>
+            <ul class="nav-icon">
+              <li>
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </li>
+              <li><ion-icon name="bag-handle-outline"></ion-icon></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Coffee Hero -->
+    <main class="featured-container">
+      <div class="featured-box">
+        <div class="featured-gallery">
+          <div class="featured-image">
+            <img
+              id="featured-image"
+              src="image/bones_smore_1.jpg"
+              alt="Main Image"
+            />
+          </div>
+          <!-- Thumbnails -->
+          <div class="thumbnails">
+            <img
+              src="image/bones_smore_1.jpg"
+              alt="Thumbnail 1"
+              onclick="changeImage('image/bones_smore_1.jpg')"
+            />
+            <img
+              src="image/bones_smore_2.jpg"
+              alt="Thumbnail 2"
+              onclick="changeImage('image/bones_smore_2.jpg')"
+            />
+            <img
+              src="image/bones_smore_3.jpg"
+              alt="Thumbnail 3"
+              onclick="changeImage('image/bones_smore_3.jpg')"
+            />
+          </div>
+        </div>
+        <div class="featured-info">
+          <div class="ratings">
+            <div class="star-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </div>
+            <div class="featured-rating">4.7/5</div>
+            <div class="rating-total">(644)</div>
+          </div>
+          <div class="featured-titles">
+            <p class="product-catagory">Medium Roast</p>
+            <h1 class="featured-name">S&#39;morey Time</h1>
+            <p class="company-name">
+              (Bones Coffee/S&#39;mores Flavored coffee)
+            </p>
+            <h2 class="featured-price">$15.99</h2>
+          </div>
+          <div class="flavor flex">
+            <div class="roast flex">
+              <ion-icon name="thumbs-up"></ion-icon>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <ion-icon name="thumbs-up-outline"></ion-icon>
+              <ion-icon name="thumbs-up-outline"></ion-icon>
+              <h5 class="vert-center">Medium Roast</h5>
+            </div>
+            <div class="flex">
+              <ion-icon name="cafe"></ion-icon>
+              <h5 class="vert-center">S&#39;mores</h5>
+            </div>
+          </div>
+          <div id="optionGrind">
+            <div>
+              <h4>Grind</h4>
+              <div class="options">
+                <a href="" class="main-btn active">Whole Bean</a>
+                <a href="" class="main-btn">Ground</a>
+              </div>
+            </div>
+            <div class="top-space">
+              <h4>Size</h4>
+              <div class="options">
+                <a href="" class="main-btn active">12 OZ</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>Frequency</h4>
+            <div class="flex border between top-space">
+              <p>One-time Purchase</p>
+              <p class="featured-price">$15.99</p>
+            </div>
+            <div class="frequency top-space">
+              <div class="flex between">
+                <h5>SUBSCRIBE & SAVE</h5>
+                <p class="featured-price"><del>$15.99</del> $12.79</p>
+              </div>
+              <ul>
+                <li>
+                  <span>&#10003; </span>Automatically delivered on your schedule
+                </li>
+                <li><span>&#10003; </span>Save 20% every time</li>
+                <li><span>&#10003; </span>Modify or cancel any time</li>
+              </ul>
+              <div class="options flex">
+                <a href="" class="second-btn">2 Weeks</a>
+                <a href="" class="second-btn">3 Weeks</a>
+                <a href="" class="second-btn">4 Weeks</a>
+                <a href="" class="second-btn">8 Weeks</a>
+              </div>
+            </div>
+            <div class="freeship desktop-hide">
+              <p class="discount-text">Free Shipping On All U.S. Oders $80+</p>
+            </div>
+          </div>
+          <div class="options between">
+            <div class="quantity">
+              <button class="minus" aria-label="Decrease">&minus;</button>
+              <input
+                type="number"
+                class="input-box"
+                value="1"
+                min="1"
+                max="10"
+              />
+              <button class="plus" aria-label="Increase">&plus;</button>
+            </div>
+            <a href="" class="main-btn cart-btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="source-info">
+          <div class="product-description">
+            <h3>Product Info</h3>
+            <p>
+              Embrace the cozy, nostalgic taste of campfires with this indulgent
+              coffee blend. Featuring the delicious flavors of toasted
+              marshmallows, graham crackers, and creamy chocolate, S&#39;more
+              Time is a sweet and comforting brew that takes you back to your
+              favorite camping memories.
+            </p>
+          </div>
+          <div class="source-description">
+            <h3>Bones Coffee</h3>
+            <p>
+              Bold flavors for adventurous drinkers! Bones Coffee is known for
+              its quirky blends and fun flavors, perfect for those who love to
+              try something unique. From sweet and savory to bold and intense,
+              their coffee will bring excitement to your morning routine. Bones
+              Coffee is committed to sustainability by using eco-friendly
+              packaging and sourcing high-quality beans from environmentally
+              conscious farms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="customer-reviews">
+      <div class="main-container">
+        <div class="reviews-wrapper">
+          <!-- Average Ratings Section (Left Column) -->
+          <div class="ratings-column">
+            <h2>Customer Reviews</h2>
+            <div class="rating-summary">
+              <div class="rating">
+                <span class="stars"> &#9733;&#9733;&#9733;&#9733;&#9733; </span>
+                <span class="rating-count">(644 reviews)</span>
+              </div>
+              <div class="average-rating">
+                <p><strong>Average Rating:</strong> 4.7 / 5</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews Section (Right Column) -->
+          <div class="comments-column">
+            <!-- Review List -->
+            <div class="review-list">
+              <div class="review">
+                <div class="review-header">
+                  <p class="reviewer-name"><strong>Sarah</strong></p>
+                  <div class="review-rating">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                  </div>
+                </div>
+                <h5>Makes an amazing latte</h5>
+                <p class="review-date">a year ago</p>
+                <p class="review-text">
+                  "At first I was actually disappointed because I didnt taste
+                  the graham cracker as much as I tasted the chocolate. But it
+                  was still really good as a pour over. Then I made it as a
+                  latte in my espresso machine, with some milk, and it was
+                  awesome. When I made an ice latte, I specifically tasted the
+                  toasted campfire flavor and the graham cracker flavor. Its
+                  important to remember that youll taste different things at
+                  different temperatures!"
+                </p>
+              </div>
+
+              <div class="review">
+                <div class="review-header">
+                  <p class="reviewer-name"><strong>Kari Celestine</strong></p>
+                  <div class="review-rating">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                  </div>
+                </div>
+                <h5>Fun Fall Coffee</h5>
+                <p class="review-date">21 days ago</p>
+                <p class="review-text">
+                  This is a great tasting coffee, especially during the cooler
+                  Fall months. Smells good while it’s brewing. Fun to share with
+                  family and friends on a cool crisp evening, along with some
+                  real s’mores. Cute artwork on the bag, too. Anyone into
+                  cryptozoology would appreciate that. I definitely give this
+                  coffee a 5 star rating ⭐️⭐️⭐️⭐️⭐️
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Write a Review Form (Only 5-Star Rating) -->
+        <div class="review-form">
+          <h2>Write a Review</h2>
+          <form action="#" method="POST">
+            <div>
+              <label for="rating" class="top-space">Your Rating:</label>
+              <div class="star-rating">
+                <div class="star" data-index="0">
+                  <ion-icon name="star-outline" class="star-icon"></ion-icon>
+                </div>
+                <div class="star" data-index="1">
+                  <ion-icon name="star-outline" class="star-icon"></ion-icon>
+                </div>
+                <div class="star" data-index="2">
+                  <ion-icon name="star-outline" class="star-icon"></ion-icon>
+                </div>
+                <div class="star" data-index="3">
+                  <ion-icon name="star-outline" class="star-icon"></ion-icon>
+                </div>
+                <div class="star" data-index="4">
+                  <ion-icon name="star-outline" class="star-icon"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="review" class="top-space">Your Review:</label>
+              <textarea id="review" name="review" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Review</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-box">
+        <img src="image/logo.jpg" alt="" />
+        <section class="footer-container">
+          <div class="footer-left">
+            <address>
+              123 Brew & Blossom Ave, <br />
+              Suite 100, <br />
+              Coffee City, USA
+            </address>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.809668248391!2d-117.84470702515657!3d34.048753117915986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c329593f3765cf%3A0x266581572d156fdd!2sMt.%20San%20Antonio%20College!5e0!3m2!1sen!2sus!4v1733094597367!5m2!1sen!2sus"
+              width="200"
+              height="auto"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="socials">
+              <a href="facebook.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="instagram.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="x.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="pinterest.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M25,2C12.3178711,2,2,12.3178711,2,25c0,9.8841553,6.2675781,18.3302612,15.036377,21.5769653	c-0.2525635-2.2515869-0.2129517-5.9390259,0.2037964-7.7243652c0.3902588-1.677002,2.5212402-10.6871338,2.5212402-10.6871338	s-0.6433105-1.2883301-0.6433105-3.1911011c0-2.9901733,1.7324219-5.2211914,3.8898315-5.2211914	c1.8349609,0,2.7197876,1.3776245,2.7197876,3.0281982c0,1.8457031-1.1734619,4.6026611-1.78125,7.1578369	c-0.506897,2.1409302,1.0733643,3.8865356,3.1836548,3.8865356c3.821228,0,6.7584839-4.0296021,6.7584839-9.8453369	c0-5.147583-3.697998-8.7471924-8.9795532-8.7471924c-6.1167603,0-9.7072754,4.588562-9.7072754,9.3309937	c0,1.8473511,0.7111816,3.8286743,1.6000977,4.9069824c0.175293,0.2133179,0.2009277,0.3994141,0.1488647,0.6160278	c-0.1629028,0.678894-0.5250854,2.1392822-0.5970459,2.4385986c-0.0934448,0.3944702-0.3117676,0.4763184-0.7186279,0.2869263	c-2.685791-1.2503052-4.364502-5.1756592-4.364502-8.3295898c0-6.7815552,4.9268188-13.0108032,14.206543-13.0108032	c7.4588623,0,13.2547607,5.3138428,13.2547607,12.4179077c0,7.4100342-4.6729126,13.3729858-11.1568604,13.3729858	c-2.178894,0-4.2263794-1.132019-4.9267578-2.4691772c0,0-1.0783081,4.1048584-1.3404541,5.1112061	c-0.4524536,1.7404175-2.3892822,5.3460083-3.3615723,6.9837036C20.1704712,47.6074829,22.5397949,48,25,48	c12.6826172,0,23-10.3173828,23-23C48,12.3178711,37.6826172,2,25,2z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <ul class="footer-right">
+            <li>
+              <h3>Shop</h3>
+              <ul class="box">
+                <li><a href="shop.html#coffee">Coffee</a></li>
+                <li><a href="shop.html#tea">Tea</a></li>
+                <li><a href="">Catalogs</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Special</h3>
+              <ul class="box">
+                <li><a href="">Blog</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Shipping & Returns</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>About</h3>
+              <ul class="box">
+                <li><a href="about.html">Mission</a></li>
+              </ul>
+              <h3>Contact</h3>
+              <ul class="box">
+                <li><a href="tel:+15551234567">+1(555) 123-4567</a></li>
+                <li>
+                  <a
+                    href="mailto:Brewandblossom.gmail?subject=Mail from our Website"
+                    >Brewandblossom.gmail</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Legal</h3>
+              <ul class="box">
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <p>all Right reseved by &copy;Brew & Blossom 2024</p>
+      </div>
+    </footer>
+    <script src="js/product.js" defer></script>
+    <!-- JS link -->
+    <script src="js/script.js" defer></script>
+    <!-- Ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
