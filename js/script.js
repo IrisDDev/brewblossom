@@ -27,7 +27,7 @@ let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 1000;
-let timeAutoNext = 8000;
+let timeAutoNext = 6000;
 nextDom.onclick = function () {
   showSlider("next");
 };
