@@ -19,8 +19,8 @@
               <span class="bar"></span>
             </div>
             <div>
-              <a href="quiz.html" class="main-btn mobile-hide"
-                >FIND YOUR FAVE</a
+              <a href="wholesale.html" class="main-btn mobile-hide"
+                >Wholesale</a
               >
             </div>
             <div class="desktop-hide mobile-show">
@@ -33,7 +33,10 @@
             </div>
             <div>
               <ul class="nav-menu">
-                <li class="nav-item nav-top">
+                <li class="nav-item nav-top desktop-hide mobile-show">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
                   <a href="shop.html#coffee" class="nav-link">Coffee</a>
                 </li>
                 <li class="nav-item">
@@ -53,19 +56,11 @@
                 <li class="nav-item">
                   <a href="subscribe.html" class="nav-link">Subscribe</a>
                 </li>
+
                 <li class="nav-item desktop-hide mobile-show">
-                  <a href="login.html" class="main-btn nav-link"
+                  <a href="wholesale.html" class="main-btn"
                     ><div class="flex-row">
-                      <ion-icon name="person-circle-outline"></ion-icon>Account
-                      Login
-                    </div></a
-                  >
-                </li>
-                <li class="nav-item desktop-hide mobile-show">
-                  <a href="test.html" class="main-btn nav-link"
-                    ><div class="flex-row">
-                      <ion-icon name="cafe-outline"></ion-icon>Find Your
-                      Favorite Taste
+                      <ion-icon name="cafe-outline"></ion-icon>Wholesale
                     </div></a
                   >
                 </li>
@@ -76,9 +71,7 @@
             </div>
             <ul class="nav-icon">
               <li>
-                <ion-icon
-                  name="person-circle-outline"
-                ></ion-icon>
+                <ion-icon name="person-circle-outline"></ion-icon>
               </li>
               <li><ion-icon name="bag-handle-outline"></ion-icon></li>
             </ul>
@@ -86,386 +79,493 @@
         </div>
       </div>
     </header>
-    <!-- Coffee Hero -->
+    <!-- MAIN PRODUCTS -->
     <main>
-      <!-- Coffee Product -->
-      <header id="coffee" role="img" area-label="a cup of coffee"  class="container coffee-hero section">
-        <div class="product-hero">
-          <p class="title">From Roasts to Espresso</p>
-          <div class="topic">Explore a world of premium coffee selections</div>
-          <p class="detail">
-            Welcome to Brew & Blossom's Coffee Shop, where we bring you a curated selection of premium, ethically sourced coffees, perfect for every taste and brewing preference.
-          </p>
+      <!-- Coffee Section -->
+      <section>
+        <header
+          id="coffee"
+          role="img"
+          area-label="a cup of coffee"
+          class="container coffee-hero section"
+        >
+          <div class="product-hero">
+            <p class="title">From Roasts to Espresso</p>
+            <div class="topic">
+              Explore a world of premium coffee selections
+            </div>
+            <p class="detail">
+              Welcome to Brew & Blossom's Coffee Shop, where we bring you a
+              curated selection of premium, ethically sourced coffees, perfect
+              for every taste and brewing preference.
+            </p>
+          </div>
+        </header>
+        <div class="freeship">
+          <p class="discount-text">Free Shipping On All U.S. Oders $80+</p>
         </div>
-      </header> 
-      <div class="freeship">
-        <p class="discount-text">
-          Free Shipping On All U.S. Oders $80+
-        </p>
-      </div>
-      <section id="products">
-        <div class="container product-grid">
-          <!--product card-->
-          <a href="product1.html" class="product-block featured">
-            <div role="img" area-label="an image of Costa Rica Las Lajas Perla Negra from Magnolia Coffee" class="product-image product-1"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Costa Rica Las Lajas Perla Negra</span> - Magnolia Coffee (Award-Winning - 94 points!)</span>
-                </h3>
-                <p class="product-description">
-                  A vibrant and smooth coffee with notes of red fruit, chocolate, and caramel. 
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                  <div class="rating-score">4.88/5</div>
+        <section id="products">
+          <div class="container product-grid">
+            <!--product card-->
+            <a href="product1.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="an image of Costa Rica Las Lajas Perla Negra from Magnolia Coffee"
+                class="product-image product-1"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category"
+                      >Costa Rica Las Lajas Perla Negra</span
+                    >
+                    - Magnolia Coffee (Award-Winning - 94 points!)
+                  </h3>
+                  <p class="product-description">
+                    A vibrant and smooth coffee with notes of red fruit,
+                    chocolate, and caramel.
+                  </p>
                 </div>
-                <p class="product-price">$26.00</p>
-                <button class="product-btn">Quick View</button>
-              </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a href="product2.html" class="product-block featured">
-            <div role="img" area-label="an image of Ethiopia Durato Bombe from Magnolia Coffee" class="product-image product-2"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Ethiopia Durato Bombe</span> - Magnolia Coffee (Donation to the V Foundation)</span>
-                </h3>
-                <p class="product-description">
-                  Rare Limited Release Coffees. 25% of sales to the V Foundation to support cancer research.
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">4.88/5</div>
                   </div>
-                  <div class="rating-score">5/5</div>
+                  <p class="product-price">$26.00</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$26.00</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a href="product3.html" class="product-block featured">
-            <div role="img" area-label="an image of S'morey Time from Bones Coffee" class="product-image product-3"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">S&#39;morey Time</span> - Bones Coffee (Medium Roasted S&#39;mores Flavored coffee)</span>
-                </h3>
-                <p class="product-description">
-                  Embrace the cozy, nostalgic taste of campfires with this indulgent coffee blend. 
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-half"></ion-icon>
+            </a>
+            <!--product card-->
+            <a href="product2.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="an image of Ethiopia Durato Bombe from Magnolia Coffee"
+                class="product-image product-2"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category">Ethiopia Durato Bombe</span>
+                    - Magnolia Coffee (Donation to the V Foundation)
+                  </h3>
+                  <p class="product-description">
+                    Rare Limited Release Coffees. 25% of sales to the V
+                    Foundation to support cancer research.
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">5/5</div>
                   </div>
-                  <div class="rating-score">4.7/5</div>
+                  <p class="product-price">$26.00</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$15.99</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a class="product-block featured">
-            <div role="img" area-label="an image of Rescue Roast from Grounds & Hounds"  class="product-image product-4"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Rescue Roast</span> - Grounds & Hounds</span>
-                </h3>
-                <p class="product-description">
-                  Rescue Roast is a medium-dark blend that’s rich and bold with a smooth, smoky finish. 
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+            </a>
+            <!--product card-->
+            <a href="product3.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="an image of S'morey Time from Bones Coffee"
+                class="product-image product-3"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category">S&#39;morey Time</span> -
+                    Bones Coffee (Medium Roasted S&#39;mores Flavored coffee)
+                  </h3>
+                  <p class="product-description">
+                    Embrace the cozy, nostalgic taste of campfires with this
+                    indulgent coffee blend.
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="rating-score">4.7/5</div>
                   </div>
-                  <div class="rating-score">5/5</div>
+                  <p class="product-price">$15.99</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$15.99</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a class="product-block featured">
-            <div role="img" area-label="an image of Army of Dark Chocolate from Bones coffee" class="product-image product-5"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Army of Dark Chocolate </span> - Bones Coffee</span>
-                </h3>
-                <p class="product-description">
-                  A rich and decadent dark roast coffee infused with smooth, creamy chocolate. 
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+            </a>
+            <!--product card-->
+            <a href="product4.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="an image of Rescue Roast from Grounds & Hounds"
+                class="product-image product-4"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category">Rescue Roast</span> - Grounds
+                    & Hounds
+                  </h3>
+                  <p class="product-description">
+                    Rescue Roast is a medium-dark blend that’s rich and bold
+                    with a smooth, smoky finish.
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">5/5</div>
                   </div>
-                  <div class="rating-score">4.8/5</div>
+                  <p class="product-price">$15.99</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$15.99</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a class="product-block featured">
-            <div role="img" area-label="an image of Espresso Infused Caramels from Grounds & Hounds" class="product-image product-6"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Espresso Infused Caramels</span> - Grounds & Hounds</span>
-                </h3>
-                <p class="product-description">
-                  Made for coffee lovers, each bite delivers a smooth, caffeinated kick with a touch of sweetness.
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+            </a>
+            <!--product card-->
+            <a href="product5.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="an image of Army of Dark Chocolate from Bones coffee"
+                class="product-image product-5"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category"
+                      >Army of Dark Chocolate
+                    </span>
+                    - Bones Coffee
+                  </h3>
+                  <p class="product-description">
+                    A rich and decadent dark roast coffee infused with smooth,
+                    creamy chocolate.
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">4.8/5</div>
                   </div>
-                  <div class="rating-score">4.9/5</div>
+                  <p class="product-price">$15.99</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$15.99</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-        </div>
+            </a>
+            <!--product card-->
+            <a href="product6.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="an image of Espresso Infused Caramels from Grounds & Hounds"
+                class="product-image product-6"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category"
+                      >Espresso Infused Caramels</span
+                    >
+                    - Grounds & Hounds
+                  </h3>
+                  <p class="product-description">
+                    Made for coffee lovers, each bite delivers a smooth,
+                    caffeinated kick with a touch of sweetness.
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">4.9/5</div>
+                  </div>
+                  <p class="product-price">$15.99</p>
+                  <button class="product-btn">Quick View</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
       </section>
-<!-- Tea Product -->
-      <header id="tea" role="img" area-label="a cup of tea"  class="container tea-hero section">
-        <div class="product-hero">
-          <p class="title">From flower to fruits</p>
-          <div class="topic">Explore our collections of flavorful tea blends</div>
-          <p class="detail">
-            Welcome to Brew & Blossom's Tea Shop, where you’ll find a delightful variety of premium, hand-picked teas to suit every mood and moment, from soothing blends to invigorating flavors.
-          </p>
+      <!-- Tea Section -->
+      <section>
+        <header
+          id="tea"
+          role="img"
+          area-label="a cup of tea"
+          class="container tea-hero section"
+        >
+          <div class="product-hero">
+            <p class="title">From flower to fruits</p>
+            <div class="topic">
+              Explore our collections of flavorful tea blends
+            </div>
+            <p class="detail">
+              Welcome to Brew & Blossom's Tea Shop, where you’ll find a
+              delightful variety of premium, hand-picked teas to suit every mood
+              and moment, from soothing blends to invigorating flavors.
+            </p>
+          </div>
+        </header>
+        <div class="freeship">
+          <p class="discount-text">Free Shipping On All U.S. Oders $80+</p>
         </div>
-      </header>
-      <div class="freeship">
-        <p class="discount-text">
-          Free Shipping On All U.S. Oders $80+
-        </p>
-      </div>
-      <section id="products">
-        <div class="container product-grid">
-          <!--product card-->
-          <a href="#" class="product-block featured">
-            <div role="img" area-label="Ceremonial Matcha Gift Set from Art of Tea" class="product-image product-7"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Ceremonial Matcha Gift Set</span> - Art of Tea</span>
-                </h3>
-                <p class="product-description">
-                  Ceremonial Grade Matcha has been ground and packed in Japan to ensure the ultimate freshness and quality.
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-half"></ion-icon>
-                  </div>
-                  <div class="rating-score">4.67/5</div>
+        <section id="products">
+          <div class="container product-grid">
+            <!--product card-->
+            <a href="product7.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="Ceremonial Matcha Gift Set from Art of Tea"
+                class="product-image product-7"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category"
+                      >Ceremonial Matcha Gift Set</span
+                    >
+                    - Art of Tea
+                  </h3>
+                  <p class="product-description">
+                    Ceremonial Grade Matcha has been ground and packed in Japan
+                    to ensure the ultimate freshness and quality.
+                  </p>
                 </div>
-                <p class="product-price">$76.99</p>
-                <button class="product-btn">Quick View</button>
-              </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a class="product-block featured">
-            <div role="img" area-label="Rejuvenating Tea Bundle from Art of Tea" class="product-image product-8"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Rejuvenating Tea Bundle</span> - Caffeine Free from Art of Tea</span>
-                </h3>
-                <p class="product-description">
-                  This bundle features two delicious loose leaf blends that will help you get your day started right and unwind at the end of the day.
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="rating-score">4.67/5</div>
                   </div>
-                  <div class="rating-score">5/5</div>
+                  <p class="product-price">$76.99</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$41.00</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a class="product-block featured">
-            <div role="img" area-label="Cup of Sunshine from Big Heart Tea" class="product-image product-9"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Cup of Sunshine- Hearbal Tea Bags from Big Heart Tea Company</span>
-                </h3>
-                <p class="product-description">
-                  The golden tea that inspired Big Heart Tea Co. Our flagship brew of turmeric, ginger, and peppercorn is basically liquid yoga. 
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+            </a>
+            <!--product card-->
+            <a href="product8.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="Rejuvenating Tea Bundle from Art of Tea"
+                class="product-image product-8"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category"
+                      >Rejuvenating Tea Bundle</span
+                    >
+                    - Caffeine Free from Art of Tea
+                  </h3>
+                  <p class="product-description">
+                    This bundle features two delicious loose leaf blends that
+                    will help you get your day started right and unwind at the
+                    end of the day.
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">5/5</div>
                   </div>
-                  <div class="rating-score">5/5</div>
+                  <p class="product-price">$41.00</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$10.99</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a class="product-block featured">
-            <div role="img" area-label="Cozy Gift Set from Big Heart Tea" class="product-image product-10"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Cozy Gift Set</span> - Limited Edition From Big Heart Tea Company</span>
-                </h3>
-                <p class="product-description">
-                  This Cozy set includes our Limited Edition Holiday Line. The best way to gift holiday cheer!
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+            </a>
+            <!--product card-->
+            <a href="product9.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="Cup of Sunshine from Big Heart Tea"
+                class="product-image product-9"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category">Cup of Sunshine</span> -
+                    Hearbal Tea Bags from Big Heart Tea Company
+                  </h3>
+                  <p class="product-description">
+                    The golden tea that inspired Big Heart Tea Co. Our flagship
+                    brew of turmeric, ginger, and peppercorn is basically liquid
+                    yoga.
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">5/5</div>
                   </div>
-                  <div class="rating-score">4.8/5</div>
+                  <p class="product-price">$10.99</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$180</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a class="product-block featured">
-            <div role="img" area-label="12 Days of Tea Winter Countdown Giftset from Harney & Sons" class="product-image product-11"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">12 Days of Tea Winter Countdown</span> - Giftset from Harney & Sons</span>
-                </h3>
-                <p class="product-description">
-                  Count down the days with two ready-to-steep premium tea bags behind each door, whether it's a new to you blend or a classic favorite. 
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+            </a>
+            <!--product card-->
+            <a href="product10.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="Cozy Gift Set from Big Heart Tea"
+                class="product-image product-10"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category">Cozy Gift Set</span> -
+                    Limited Edition From Big Heart Tea Company
+                  </h3>
+                  <p class="product-description">
+                    This Cozy set includes our Limited Edition Holiday Line. The
+                    best way to gift holiday cheer!
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">4.8/5</div>
                   </div>
-                  <div class="rating-score">5/5</div>
+                  <p class="product-price">$180</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$29.95</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-          <!--product card-->
-          <a class="product-block featured">
-            <div role="img" area-label="Wellness Trio Gift Regular Giftset from Harney & Sons" class="product-image product-12"></div>
-            <div class="product-text">
-              <div>
-                <h3 class="product-name">
-                  <span class="product-catagory">Wellness Trio Gift</span> - Regular Giftset from Harney & Sons</span>
-                </h3>
-                <p class="product-description">
-                  The Wellness Trio Gift is the key to discovering the world of wellness brews and the great effects they can impart on your mind, body, and soul.
-                </p>
-              </div>
-              <div class="product-center">
-                <div class="ratings">
-                  <div class="star-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+            </a>
+            <!--product card-->
+            <a href="product11.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="12 Days of Tea Winter Countdown Giftset from Harney & Sons"
+                class="product-image product-11"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category"
+                      >12 Days of Tea Winter Countdown</span
+                    >
+                    - Giftset from Harney & Sons
+                  </h3>
+                  <p class="product-description">
+                    Count down the days with two ready-to-steep premium tea bags
+                    behind each door, whether it's a new to you blend or a
+                    classic favorite.
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">5/5</div>
                   </div>
-                  <div class="rating-score">4.8/5</div>
+                  <p class="product-price">$29.95</p>
+                  <button class="product-btn">Quick View</button>
                 </div>
-                <p class="product-price">$59.95</p>
-                <button class="product-btn">Quick View</button>
               </div>
-            </div>
-          </a>
-        </div>
+            </a>
+            <!--product card-->
+            <a href="product12.html" class="product-block featured">
+              <div
+                role="img"
+                area-label="Wellness Trio Gift Regular Giftset from Harney & Sons"
+                class="product-image product-12"
+              ></div>
+              <div class="product-text">
+                <div>
+                  <h3 class="product-name">
+                    <span class="product-category">Wellness Trio Gift</span> -
+                    Regular Giftset from Harney & Sons
+                  </h3>
+                  <p class="product-description">
+                    The Wellness Trio Gift is the key to discovering the world
+                    of wellness brews and the great effects they can impart on
+                    your mind, body, and soul.
+                  </p>
+                </div>
+                <div class="product-center">
+                  <div class="ratings">
+                    <div class="star-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <div class="rating-score">4.8/5</div>
+                  </div>
+                  <p class="product-price">$59.95</p>
+                  <button class="product-btn">Quick View</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
       </section>
     </main>
+    <!--Footer Section-->
     <footer class="footer">
       <div class="footer-box">
-        <img src="image/logo.jpg" alt="Brew and Blossom logo" />
+        <img src="image/logo.jpg" alt="company logo" />
         <section class="footer-container">
           <div class="footer-left">
             <address>
@@ -483,7 +583,7 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <div class="socials">
-              <a href="facebook.com">
+              <a href="https://www.facebook.com/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -497,7 +597,7 @@
                   ></path>
                 </svg>
               </a>
-              <a href="instagram.com">
+              <a href="https://www.instagram.com/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -511,7 +611,7 @@
                   ></path>
                 </svg>
               </a>
-              <a href="x.com">
+              <a href="https://x.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -525,7 +625,7 @@
                   ></path>
                 </svg>
               </a>
-              <a href="pinterest.com">
+              <a href="https://www.pinterest.com/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -547,16 +647,8 @@
               <ul class="box">
                 <li><a href="shop.html#coffee">Coffee</a></li>
                 <li><a href="shop.html#tea">Tea</a></li>
-                <li><a href="">Catalogs</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3>Special</h3>
-              <ul class="box">
-                <li><a href="">Blog</a></li>
+                <li><a href="wholesale.html">Wholesale</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Shipping & Returns</a></li>
               </ul>
             </li>
             <li>
@@ -564,13 +656,14 @@
               <ul class="box">
                 <li><a href="about.html">Mission</a></li>
               </ul>
+
               <h3>Contact</h3>
               <ul class="box">
                 <li><a href="tel:+15551234567">+1(555) 123-4567</a></li>
                 <li>
                   <a
                     href="mailto:Brewandblossom.gmail?subject=Mail from our Website"
-                    >Brewandblossom.gmail</a
+                    >Brewandblossom@gmail.com</a
                   >
                 </li>
               </ul>
@@ -578,15 +671,15 @@
             <li>
               <h3>Legal</h3>
               <ul class="box">
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
               </ul>
             </li>
           </ul>
         </section>
       </div>
       <div class="footer-bottom">
-        <p>all Right reseved by &copy;Brew & Blossom 2024</p>
+        <p>&copy; 2024 Brew & Blossom. All Rights Reserved.</p>
       </div>
     </footer>
     <!-- JS link -->

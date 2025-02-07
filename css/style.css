@@ -224,8 +224,8 @@
 @keyframes showContent {
   to {
     opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
+    filter: blur(0px);
+    transform: translateY(0px);
   }
 }
 .carousel .list .item:nth-child(1) .title {
@@ -245,7 +245,7 @@
 }
 .carousel.prev .thumbnail .item:nth-child(1) {
   opacity: 0;
-  filter: blur(20px);
+  filter: blur(10px);
   animation: contentIn 0.3s 0.4s linear 1 forwards !important;
 }
 @keyframes contentIn {
@@ -255,6 +255,9 @@
   }
 }
 /* Sliding Effect Next*/
+.carousel.prev .list .item img {
+  z-index: 100;
+}
 .carousel.next .list .item:nth-child(1) img {
   width: 160px;
   height: 220px;
@@ -277,9 +280,7 @@
   overflow: hidden;
   animation: showThumbnail 0.5s linear 1 forwards;
 }
-.carousel.prev .list .item img {
-  z-index: 100;
-}
+
 @keyframes showThumbnail {
   from {
     width: 0;
@@ -330,12 +331,12 @@
 .carousel.prev .list .item:nth-child(2) .content .topic,
 .carousel.prev .list .item:nth-child(2) .content .detail,
 .carousel.prev .list .item:nth-child(2) .content .buttons {
-  animation: contentOut 1.5s linear 1 forwards !important;
+  animation: contentOut 1.5s ease 1 forwards !important;
 }
 @keyframes contentOut {
   to {
     transform: translateY(-160px);
-    filter: blur(20px);
+    filter: blur(80px);
     opacity: 0;
   }
 }
@@ -411,9 +412,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 6px 6px 0 0;
-}
-.product-name {
-  text-align: center;
 }
 .ratings {
   display: flex;
@@ -637,17 +635,24 @@ footer {
   gap: 20px;
   padding: 50px;
 }
+.product-title {
+  font-family: var(--tf-oswald);
+  margin-bottom: 1rem;
+  font-size: var(--fs-4);
+  font-weight: 400;
+}
 .product-name {
   font-family: var(--tf-oswald);
   font-size: var(--fs-4);
   font-weight: 200;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .rating-score {
   font-size: var(--fs-8);
 }
-.product-catagory {
+.product-category {
   font-weight: 400;
-  line-height: 1.2;
 }
 #products .product-block:link {
   color: #000;
@@ -950,6 +955,23 @@ footer {
   transition: color 0.3s ease; /* Transition to fill the star with color */
   cursor: pointer;
 }
+
+/*  Legal Terms  */
+.legal-section {
+  padding: 1rem 0 8rem;
+}
+.legal-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+ul.bullet-list {
+  padding-left: 50px;
+}
+ul.bullet-list li {
+  list-style-type: circle;
+}
+
 /* Ensures only stars before and including the hovered one are highlighted */
 .star-rating .star:nth-child(1):hover,
 .star-rating .star:nth-child(2):hover,
@@ -1234,7 +1256,6 @@ h5 {
 .section {
   scroll-margin-top: 140px;
 }
-
 /*------------------------------------------*\
     Media Query
 \*------------------------------------------*/
@@ -1273,7 +1294,7 @@ h5 {
     height: 100vh;
   }
   .nav-top {
-    padding-top: 16%;
+    padding-top: 10%;
   }
   .freeship-mobile {
     width: 100%;
@@ -1299,7 +1320,7 @@ h5 {
     display: block;
   }
   .nav-icon {
-    gap: 5px;
+    gap: 1rem;
     width: 20%;
   }
   .flex-row {

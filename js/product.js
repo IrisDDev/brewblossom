@@ -72,7 +72,7 @@ stars.forEach((star, index) => {
 // Product Images Swap
 function changeImage(imageSrc) {
   // Get the main image element
-  const featuredImage = document.getElementById("featured-image");
+  const featuredImage = document.getElementById('featured-image');
 
   // Update the src of the main image with the clicked thumbnail's image
   featuredImage.src = imageSrc;
