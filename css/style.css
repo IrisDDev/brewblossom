@@ -219,7 +219,7 @@
   transform: translateY(40px);
   filter: blur(20px);
   opacity: 0;
-  animation: showContent 0.5s 1s linear 1 forwards;
+  animation: showContent 0.8s 1s linear 1 forwards;
 }
 @keyframes showContent {
   to {
@@ -245,8 +245,8 @@
 }
 .carousel.prev .thumbnail .item:nth-child(1) {
   opacity: 0;
-  filter: blur(10px);
-  animation: contentIn 0.3s 0.4s linear 1 forwards !important;
+  filter: blur(20px);
+  animation: contentIn 0.4s 0.5s linear 1 forwards !important;
 }
 @keyframes contentIn {
   to {
@@ -278,7 +278,7 @@
 }
 .carousel.next .thumbnail .item:nth-last-child(1) {
   overflow: hidden;
-  animation: showThumbnail 0.5s linear 1 forwards;
+  animation: showThumbnail 0.8s linear 1 forwards;
 }
 
 @keyframes showThumbnail {
@@ -288,7 +288,7 @@
   }
 }
 .carousel.next .thumbnail {
-  animation: effectNext 0.5s linear 1 forwards;
+  animation: effectNext 0.8s linear 1 forwards;
 }
 @keyframes effectNext {
   from {
@@ -303,7 +303,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  animation: outFrame 0.5s linear 1 forwards;
+  animation: outFrame 0.8s linear 1 forwards;
   filter: brightness(46%);
 }
 @keyframes outFrame {
@@ -316,27 +316,20 @@
     filter: brightness(100%);
   }
 }
-.carousel.prev .thumbnail .item:nth-child(1) {
-  overflow: hidden;
-  opacity: 0;
-  animation: showThumbnail 0.5s linear 1 forwards;
-}
-
 .carousel.next .arrows button,
 .carousel.prev .arrows button {
   pointer-events: none;
 }
-
 .carousel.prev .list .item:nth-child(2) .content .title,
 .carousel.prev .list .item:nth-child(2) .content .topic,
 .carousel.prev .list .item:nth-child(2) .content .detail,
 .carousel.prev .list .item:nth-child(2) .content .buttons {
-  animation: contentOut 1.5s ease 1 forwards !important;
+  animation: contentOut 0.8s ease 1 forwards !important;
 }
 @keyframes contentOut {
   to {
     transform: translateY(-160px);
-    filter: blur(80px);
+    filter: blur(20px);
     opacity: 0;
   }
 }
@@ -492,7 +485,7 @@ ol.numbered-list {
 
 /* Style the tab */
 .subscribe-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)),
     url(../image/img3.jpg);
   background-repeat: no-repeat;
   background-position: center;
