@@ -1278,6 +1278,12 @@ h5 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+@media (min-width: 1600px) {
+  .featured-container,
+  .main-container {
+    max-width: 1400px;
+  }
+}
 @media (max-width: 1024px) {
   .hamburger {
     display: block;
@@ -1355,11 +1361,6 @@ h5 {
     flex: 1 100%;
     flex-direction: column;
     gap: 40px;
-  }
-}
-@media (min-width: 764px) {
-  .source-info {
-    margin-top: 8rem;
   }
 }
 @media (max-width: 764px) {
