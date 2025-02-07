@@ -632,7 +632,7 @@ footer {
   font-family: var(--tf-oswald);
   margin-bottom: 1rem;
   font-size: var(--fs-4);
-  font-weight: 400;
+  font-weight: 600;
 }
 .product-name {
   font-family: var(--tf-oswald);
@@ -645,7 +645,7 @@ footer {
   font-size: var(--fs-8);
 }
 .product-category {
-  font-weight: 400;
+  font-weight: 600;
 }
 #products .product-block:link {
   color: #000;
@@ -729,7 +729,7 @@ footer {
 .featured-titles {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 1rem;
 }
 .featured-rating {
   font-family: var(--btn-fjalla);
@@ -748,7 +748,7 @@ footer {
     "images info"
     "images info"
     "description info";
-  grid-gap: 35px;
+  grid-gap: 8rem;
 }
 .featured-gallery {
   display: grid;
@@ -768,7 +768,7 @@ footer {
 .featured-image img {
   width: 100%;
   max-height: 400px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: var(--radius-8);
 }
 .thumbnails {
@@ -814,7 +814,7 @@ footer {
   grid-area: info;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2rem;
 }
 .featured-box .source-info {
   grid-area: description;
@@ -830,7 +830,7 @@ footer {
 }
 .featured-box .source-info {
   display: flex;
-  gap: 30px;
+  gap: 4rem;
 }
 .source-info {
   flex-direction: column;
@@ -861,11 +861,15 @@ footer {
   padding: 8px 10px;
   outline: none;
 }
-/* Hide the number input spin buttons */
+/* Hide the number input spin buttons For chrome, Safari, Edge, Opera :*/
 .input-box::-webkit-inner-spin-button,
 .input-box::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  margin: 0;
+  z-index: -1000;
+}
+/* Hide the number input spin buttons For Firefix :*/
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 .cart-btn {
   width: 60%;
@@ -1227,7 +1231,14 @@ h5 {
   color: var(--black-olive);
   background-color: var(--white);
 }
-#optionGrind .active,
+.cart-options {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.cart-options .active,
 .product-block:hover .product-btn,
 .main-btn:hover {
   background-color: var(--verdigris);
@@ -1344,6 +1355,11 @@ h5 {
     flex: 1 100%;
     flex-direction: column;
     gap: 40px;
+  }
+}
+@media (min-width: 764px) {
+  .source-info {
+    margin-top: 8rem;
   }
 }
 @media (max-width: 764px) {
