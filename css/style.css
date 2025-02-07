@@ -955,6 +955,16 @@ footer {
   transition: color 0.3s ease; /* Transition to fill the star with color */
   cursor: pointer;
 }
+/* Wholesale Page */
+.wholesale-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)),
+    url(../image/img4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  filter: l;
+}
 
 /*  Legal Terms  */
 .legal-section {
