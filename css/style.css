@@ -132,13 +132,14 @@
 .carousel .list .item .content .topic,
 .product-hero .topic {
   font-family: var(--tf-sansita-black);
-  font-size: var(--fs-2);
+  font-size: var(--fs-1);
   padding-bottom: 10px;
   color: var(--sandy-brown);
   text-shadow: var(--shadow-3);
 }
 .carousel .list .item .content .detail,
 .product-hero .detail {
+  font-size: var(--fs-6);
   padding-bottom: 20px;
   color: var(--white);
   text-shadow: var(--shadow-3);
@@ -469,7 +470,10 @@
   width: 70%;
   margin: 0 auto;
 }
-/* Subscribe & Wholesale*/
+/* Subscribe*/
+main > .subscription-content {
+  padding: 6rem 4rem;
+}
 ol.numbered-list {
   padding-left: 50px;
 }
@@ -482,8 +486,6 @@ ol.numbered-list {
   font-size: 16px;
   line-height: 20px;
 }
-
-/* Style the tab */
 .subscribe-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)),
     url(../image/img3.jpg);
@@ -493,51 +495,92 @@ ol.numbered-list {
   height: 50vh;
   filter: l;
 }
-.tab {
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+/* Wholesale */
+main > .wholesale-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 4rem;
 }
-.tab button {
-  display: inline;
-  background-color: inherit;
-  color: black;
-  padding: 20px 30px;
-
+.wholesale-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)),
+    url(../image/img4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  filter: l;
+}
+#wholesale-wrapper {
+  width: 100%;
+  padding: 2rem 0;
+}
+.contact-wrapper {
+  position: relative;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: var(--radius-8);
+  background: var(--naples-yellow);
+  display: flex;
+  box-shadow: var(--shadow-2);
+}
+.info-wrap {
+  padding: 4rem;
+  border-radius: var(--radius-8);
+  background: var(--naples-yellow);
+  justify-content: space-between;
+}
+.info-title {
+  font-size: var(--fs-4);
+  letter-spacing: 0.5px;
+}
+.info-subtitle {
+  font-size: var(--fs-6);
+  font-weight: 300;
+}
+.info-details {
+  align-items: flex-start;
+}
+.form-wrap {
+  background: var(--white_80);
+  width: 100%;
+  padding: 4rem;
+  border-top-right-radius: var(--radius-8);
+  border-bottom-right-radius: var(--radius-8);
+}
+.form-title {
+  padding: 0rem 3rem;
+}
+.form-fields {
+  display: table;
+  width: 100%;
+  padding: 1rem;
+}
+.form-fields input,
+.form-fields textarea {
   border: none;
   outline: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 17px;
+  background: none;
+  font-size: var(--fs-5);
+  color: black;
+  padding: 20px;
+  width: 100%;
 }
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.form-fields textarea {
+  min-height: 200px;
+  resize: none;
 }
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
+.form-group {
+  padding: 0px 20px;
+  margin: 1.8rem 1.2rem;
+  border-radius: var(--radius-8);
+  box-shadow: inset 8px 8px 8px #ddd, inset -8px -8px 8px #fff;
 }
-
-/* Style the tab content */
-
-.tabcontent {
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  display: none;
+form .submit-btn {
+  max-width: 380px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-
-/* Clear floats after the tab */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* Style the buttons that are used to open the tab content */
-
 /* Footer */
 footer {
   background-color: var(--bright-teal);
@@ -606,7 +649,7 @@ footer {
   height: 50vh;
 }
 .product-hero {
-  max-width: 800px;
+  max-width: 880px;
   padding: 20px;
   height: 100%;
   margin: 0 auto;
@@ -617,7 +660,7 @@ footer {
   text-align: center;
 }
 .product-image {
-  height: 300px;
+  min-height: 380px;
   background-color: #000;
   background-size: cover;
   background-position: center;
@@ -625,6 +668,8 @@ footer {
 .product-text {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px;
   gap: 20px;
   padding: 50px;
 }
@@ -952,16 +997,6 @@ input[type="number"] {
   transition: color 0.3s ease; /* Transition to fill the star with color */
   cursor: pointer;
 }
-/* Wholesale Page */
-.wholesale-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)),
-    url(../image/img4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 50vh;
-  filter: l;
-}
 
 /*  Legal Terms  */
 .legal-section {
@@ -990,7 +1025,7 @@ ul.bullet-list li {
 .submit-btn {
   align-self: flex-start;
 }
-button.submit-btn:hover {
+.submit-btn:hover {
   background-color: var(--verdigris);
   color: var(--white);
 }
@@ -1006,8 +1041,8 @@ button.submit-btn:hover {
   --black-olive: hsla(100, 18%, 13%, 1);
   --paynes-gray: hsla(195, 67%, 30%, 1);
   --verdigris: hsla(180, 63%, 42%, 1);
-  --naples-yellow: hsla(47, 87%, 66%, 1);
-  --sandy-brown: rgb(239, 137, 46);
+  --naples-yellow: rgb(241, 199, 46);
+  --sandy-brown: rgb(255, 119, 0);
   --mustard: hsla(39, 60%, 54%, 1);
   --coral: hsla(11, 96%, 78%, 1);
   --dark-teal: hsla(180, 100%, 18%, 1);
@@ -1024,8 +1059,8 @@ button.submit-btn:hover {
   --black_5: hsla(0, 0%, 0%, 0.05);
   /* White Colors */
   --white: hsl(0, 0%, 100%);
-  --white_30: hsla(0, 0%, 100%, 0.3);
-  --white_80: hsla(0, 0%, 100%, 0.8);
+  --white_30: rgb(236, 234, 234);
+  --white_80: rgb(246, 246, 246);
   /* Gradient Color */
 
   /* Typography */
@@ -1041,7 +1076,7 @@ button.submit-btn:hover {
   --fs-1: 4.6rem;
   --fs-2: 4rem;
   --fs-3: 3.4rem;
-  --fs-4: 2.2rem;
+  --fs-4: 2.6rem;
   --fs-5: 2rem;
   --fs-6: 1.8rem;
   --fs-7: 1.5rem;
@@ -1053,7 +1088,7 @@ button.submit-btn:hover {
 
   /* Shadow */
   --shadow-1: 0 8px 15px var(--black_15);
-  --shadow-2: 0 4px 10px var(--black_5);
+  --shadow-2: 2px 4px 8px var(--black_5);
   --shadow-3: 2px 2px var(--dark-teal);
 
   /* Radiux */
@@ -1125,8 +1160,11 @@ body {
   background-color: var(--white);
   color: var(--black-olive);
   font-size: 1.6rem;
-  font-weight: var(--bfw-5000);
+  font-weight: var(--bfw-500);
   line-height: 1.6;
+}
+svg {
+  width: 30px;
 }
 :focus-visible {
   outline-offset: 4px;
@@ -1188,8 +1226,8 @@ h5 {
 .blog-container {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 6rem 2rem;
 }
-
 .border {
   border: 1px solid var(--black-olive);
   padding: 10px;
@@ -1268,6 +1306,12 @@ h5 {
 .section {
   scroll-margin-top: 140px;
 }
+.inlineflex {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.8rem;
+}
 /*------------------------------------------*\
     Media Query
 \*------------------------------------------*/
@@ -1279,7 +1323,7 @@ h5 {
 @media (min-width: 1600px) {
   .featured-container,
   .main-container {
-    max-width: 1400px;
+    max-width: 1-24px;
   }
 }
 @media (max-width: 1024px) {
@@ -1360,10 +1404,17 @@ h5 {
     flex-direction: column;
     gap: 40px;
   }
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .form-wrap {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: var(--radius-8);
+    border-bottom-left-radius: var(--radius-8);
+  }
 }
 @media (max-width: 764px) {
   .blog-container {
-    width: 90%;
     margin: 0 auto;
   }
   .nav-menu {
@@ -1428,6 +1479,19 @@ h5 {
     border-bottom: 2px solid var(--bright-turquoise);
     width: 5%;
   }
+  main > .wholesale-content,
+  main > .subscription-content {
+    padding: 2rem;
+  }
+  ol.numbered-list {
+    padding-left: 20px;
+  }
+  .form-wrap {
+    padding: 1rem;
+  }
+  .form-title {
+    padding: 3rem 3rem 0rem;
+  }
 }
 @media (max-width: 340px) {
   .slide-content {
@@ -1442,10 +1506,13 @@ h5 {
     top: 80%;
     right: 2.8rem;
   }
-
   .swiper-button-prev {
     position: absolute;
     top: 80%;
     left: 2.8rem;
+  }
+  .info-wrap,
+  .form-wrap {
+    padding: 2rem;
   }
 }
